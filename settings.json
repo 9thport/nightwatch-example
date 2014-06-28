@@ -1,0 +1,131 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "",
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "selenium-2.39.0/selenium-server-standalone-2.39.0.jar",
+    "log_path" : false,
+    "host" : "127.0.0.1",
+    "port" : 4444
+  },
+  "test_settings" : {
+    "default" : {
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "iphone",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+    "prod_ff" : {
+      "launch_url" : "http://www.aaronaddleman.com",
+      "output_folder" : "reports/aaronaddleman",
+      "selenium_port"  : 7779,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+    "prod_c" : {
+      "launch_url" : "http://www.aaronaddleman.com",
+      "chrome_driver" : "./drivers/chromedriver/chromedriver",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+    "prod_s" : {
+      "launch_url" : "http://www.aaronaddleman.com",
+      "chrome_driver" : "./drivers/chromedriver/chromedriver",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "safari",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+    "prod_ie" : {
+      "launch_url" : "http://www.aaronaddleman.com",
+      "ie_driver" : "./drivers/iedriver/IEDriverServer.exe",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "ie",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "version": "8"
+      }
+    },
+    "local" : {
+      "launch_url" : "http://localhost:9393",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+    "local_chrome" : {
+      "launch_url" : "http://localhost:9393",
+      "chrome_driver" : "./drivers/chromedriver/chromedriver",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    }
+  }
+}
